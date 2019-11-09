@@ -176,7 +176,7 @@ class Adapter {
 				return reject( response && response.error && response.error.message ? response.error.message : genericErrorText );
 			}
 
-			resolve( response.url ? { default: response.url } : response.urls );
+			resolve( response[ 0 ] && response[ 0 ].url ? { default: response[ 0 ].url } : null );
 		} );
 
 		// Upload progress when it is supported.
@@ -208,7 +208,7 @@ class Adapter {
 		// Prepare the form data.
 		const data = new FormData();
 
-		data.append( 'upload', file );
+		data.append( 'files', file );
 
 		// Send the request.
 		this.xhr.send( data );
