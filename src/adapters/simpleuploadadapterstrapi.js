@@ -10,7 +10,7 @@
 /* globals XMLHttpRequest, FormData, console */
 
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
-import FileRepository from '../filerepository';
+import FileRepository from '@ckeditor/ckeditor5-upload/src/filerepository';
 import { attachLinkToDocumentation } from '@ckeditor/ckeditor5-utils/src/ckeditorerror';
 
 /**
@@ -38,7 +38,7 @@ import { attachLinkToDocumentation } from '@ckeditor/ckeditor5-utils/src/ckedito
  *
  * @extends module:core/plugin~Plugin
  */
-export default class SimpleUploadAdapter extends Plugin {
+export default class SimpleUploadAdapterStrapi extends Plugin {
 	/**
 	 * @inheritDoc
 	 */

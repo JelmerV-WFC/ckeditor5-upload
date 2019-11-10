@@ -1,6 +1,6 @@
 {
-  "name": "@ckeditor/ckeditor5-upload",
-  "version": "15.0.0",
+  "name": "ckeditor5-upload-strapi",
+  "version": "1.0.1",
   "description": "Upload Feature for CKEditor 5.",
   "keywords": [
     "ckeditor",
@@ -26,10 +26,12 @@
   "author": "CKSource (http://cksource.com/)",
   "license": "GPL-2.0-or-later",
   "homepage": "https://ckeditor.com/ckeditor-5",
-  "bugs": "https://github.com/ckeditor/ckeditor5/issues",
+  "bugs": {
+    "url": "https://github.com/ckeditor/ckeditor5/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5-upload.git"
+    "url": "git+https://github.com/ckeditor/ckeditor5-upload.git"
   },
   "files": [
     "lang",
@@ -52,5 +54,10 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "main": ".eslintrc.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
   }
 }
