@@ -50,7 +50,7 @@ export default class SimpleUploadAdapterStrapi extends Plugin {
 	 * @inheritDoc
 	 */
 	static get pluginName() {
-		return 'SimpleUploadAdapter';
+		return 'SimpleUploadAdapterStrapi';
 	}
 
 	/**
